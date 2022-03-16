@@ -57,4 +57,4 @@ while exitornah == True:
     if operatorstr == '=':
         print(num1int, "=", num2int, "=", num1int==num2int)
 
-    print("sussy wussy")
+print("thank you not thank you for using me calculator")
