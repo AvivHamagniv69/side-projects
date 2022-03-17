@@ -34,27 +34,21 @@ while exitornah == True:
 
     operator = input("choose an operator    ")
     operatorstr = str(operator)
-    if '+' not in operatorstr:
-        if '-' not in operatorstr:
-            if '*' not in operatorstr:
-                if '/' not in operatorstr:
-                    if '=' not in operatorstr:
-                        exitornah = False
-                        break
+    
+    try:
+        if operatorstr == '+':
+            print(num1int, "+", num2int, "=", num1int+num2int)
 
-    if operatorstr == '+':
-        print(num1int, "+", num2int, "=", num1int+num2int)
+        if operatorstr == '-':
+            print(num1int, "-", num2int, "=", num1int-num2int)
 
-    if operatorstr == '-':
-        print(num1int, "-", num2int, "=", num1int-num2int)
+        if operatorstr == '*':
+            print(num1int, "*", num2int, "=", num1int*num2int)
 
-    if operatorstr == '*':
-        print(num1int, "*", num2int, "=", num1int*num2int)
+        if operatorstr == '/':
+            print(num1int, "/", num2int, "=", num1int/num2int)
 
-    if operatorstr == '/':
-        print(num1int, "/", num2int, "=", num1int/num2int)
-
-    if operatorstr == '=':
-        print(num1int, "=", num2int, "=", num1int==num2int)
-
-print("thank you not thank you for using me calculator")
+        if operatorstr == '=':
+            print(num1int, "=", num2int, "=", num1int==num2int)
+    except:
+        print("error, not an operator")
